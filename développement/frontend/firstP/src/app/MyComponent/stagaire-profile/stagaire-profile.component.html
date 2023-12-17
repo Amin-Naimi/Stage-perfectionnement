@@ -1,0 +1,124 @@
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="d-flex align-items-center justify-content-between" style="margin-top:15px ;">
+      <a href="http://www.lescimentsdebizerte.ind.tn" class="logo d-flex align-items-center">
+          <img src="../../../../assets/logo.png" alt="logo">
+          <span class="d-none d-lg-block">Ciments De Bizerte<h6>شركـــة اسمنـت بنـــــزرت</h6></span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+  </div><!-- End Logo -->
+
+  <div class="logout" >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-right"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+          <path fill-rule="evenodd"
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+      </svg>
+      <h6 style="margin-left: 5px; padding-top: 7px;" (click)="logOut()">Deconnecter</h6>
+  </div>
+</header>
+
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+  <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+          <a class="nav-link ">
+              <div style="margin-right: 10px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
+                      <path
+                          d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5z" />
+                  </svg>
+              </div>
+              <span>Stagaire</span>
+          </a>
+      </li><!-- End Dashboard Nav -->
+
+  </ul>
+</aside><!-- End Sidebar-->
+
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Profile</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active">Stagaire Profile</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section profile">
+      <div class="row">
+        <div class="col-xl-4">
+
+          <div class="card">
+            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+              <h2 (click)="getDecodedToken()">Mohamed Amin Naimi</h2>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-xl-8">
+
+          <div class="card">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
+
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Etat</button>
+                </li>
+
+
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                  <h5 class="card-title" (click)="getStagaire(email)">Demande:</h5>
+                  <h1 class=" fst-italic" style="font-size: 30px;">Votre demande est {{etat}}</h1>
+
+                  <h5 class="card-title"><b>Profile Detailes:</b></h5>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label "><b>Nom et prenom:</b></div>
+                    <div class="col-lg-9 col-md-8"><h5>{{Nom}} {{prenom}}</h5></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label"><b>Spécialité:</b></div>
+                    <div class="col-lg-9 col-md-8"><h5>{{spec}}</h5></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label"><b>Université:</b></div>
+                    <div class="col-lg-9 col-md-8"><h5>{{uni}}</h5></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label"><b>NumTél:</b></div>
+                    <div class="col-lg-9 col-md-8"><h5>{{NumTl}}</h5></div>
+                  </div>
+
+                </div>
+              </div><!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

@@ -1,0 +1,97 @@
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero d-flex align-items-center">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <h1 data-aos="fade-up" style="margin-top: -70px;">Bienvenue au Service Stage et Formation de Ciment de Bizerte
+        </h1>
+        <br>
+        <h2 data-aos="fade-up" data-aos-delay="400">Où la croissance professionnelle est notre priorité</h2>
+        <div data-aos="fade-up" data-aos-delay="600">
+        </div>
+      </div>
+      <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="../../../../assets/hero-img.png" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+
+</section><!-- End Hero -->
+
+<section id="about" class="about">
+
+  <div class="container" data-aos="fade-up">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content">
+          <h3>Description:</h3>
+          <h2>Le service Stage et Formation de la Société Ciment de Bizerte offre aux étudiants l'opportunité de
+            développer leurs compétences et de mettre en pratique leurs connaissances théoriques en milieu professionnel
+          </h2>
+          <p>
+            les stages proposés par ce service sont une occasion pour les étudiants de démontrer leurs compétences et
+            leur motivation à la Société Ciment de Bizerte et d'établir un lien avec l'entreprise pour de futures
+            opportunités de carrière.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+        <img src="../../../../assets/ag42-ciment_bizerte_tunisie.jpg" class="img-fluid" alt="">
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+<!-- ======= Values Section ======= -->
+<section id="values" class="values">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <p>Gérez votre expérience de stage avec notre plateforme complète</p>
+      <br>
+    </header>
+
+    <div class="row">
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <a [routerLink]="['/Stagaire-Registre']">
+          <div class="box">
+            <img src="../../../../assets/1.jpg" class="img-fluid" alt="">
+            <h3>Espace Stagiaire</h3>
+            <p>Soumettez votre demande de stage en toute simplicité</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+        <a (click)="handleLoginAction('Encadreur')">
+          <div class="box">
+            <img src="../../../../assets/2.jpg" class="img-fluid" alt="">
+            <h3>Espace Encadreur</h3>
+            <p>Simplifiez la gestion des demandes de stage avec notre outil en ligne</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+        <a (click)="handleLoginAction('admin')">
+          <div class="box">
+            <img src="../../../../assets/3.jpg" class="img-fluid" alt="">
+            <h3>Espace Administrateur</h3>
+            <p>Une gestion simplifiée pour une expérience de stage optimale</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- End Values Section -->

@@ -1,0 +1,41 @@
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+.card-title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #012970;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .card-title span {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 500px;
+  }
+  div.close {
+    margin-left: 335px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  div.close svg {
+    display: block;
+    margin: auto;
+   
+  }
+  
+  div.close svg path {
+    fill: rgb(22, 8, 122); /* Remplacez la couleur par celle de votre choix */
+  }
+  
+  div.close:hover svg path {
+    fill: red; /* Remplacez la couleur par celle de votre choix */
+  }
+  .alert-danger{
+    margin-top: 25px;
+  }
